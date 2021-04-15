@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing.. jenkinsfile'
+                 sh 'npm run test'
             }
         }
         stage('Deploy') {
